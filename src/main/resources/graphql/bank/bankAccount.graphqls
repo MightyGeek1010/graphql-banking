@@ -1,13 +1,5 @@
 type BankAccount {
 	id: ID!
 	client: Client
-#	name: String
 	currency: Currency!
 }
-
-#type Client {
-#	id: ID!
-#	firstName: String!
-##	middleName: [String!]
-#	lastName: String!
-#}

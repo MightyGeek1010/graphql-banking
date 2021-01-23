@@ -1,0 +1,17 @@
+graphql:
+    playground:
+        headers:
+            Authorization: 'Bearer TOKEN '
+            user_id: Virak
+        tabs:
+            - name: Bank account sample query
+              query: classpath:playground/bank_account.graphql
+              variables: classpath:playground/bank_account_variables.json
+    servlet:
+        max-query-depth: 100
+server:
+    http2:
+        enabled: true
+spring:
+    application:
+        name: graphql-banking
